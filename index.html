@@ -27,16 +27,21 @@
       <span id="parcel">Parcel</span><span id="roo">roo</span
       ><span id="reserved"> &#174;</span>
     </h1>
+    <h2>QR Code Generator</h2>
     <div class="container">
       <div class="qr-container">
         <div id="qrcode"></div>
         <br />
         <form>
           <label for="qr-data"
-            >Enter Characters Below To Generate QR Code. <br />(Max 260
-            Characters)</label
-          >
-          <br /><br /><br />
+            ><span id="instructions">Instructions:</span> <br />
+            <ol>
+              <li>Type characters In Box Below <br />(Max 260 Characters )</li>
+              <li>Click Generate QR Code</li>
+              <li>Click Download Button To Download QR Code</li>
+            </ol>
+          </label>
+          <br /><br />
           <textarea type="text" id="qr-data" maxlength="260" required>
           </textarea>
           <button type="submit" id="generate-button">
