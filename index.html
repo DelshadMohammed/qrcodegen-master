@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="qrcode.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>QR Code Generator | Parcelroo Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      <span id="parcel">Parcel</span><span id="roo">roo</span
+      ><span id="reserved"> &#174;</span>
+    </h1>
+    <div class="container">
+      <div class="qr-container">
+        <div id="qrcode"></div>
+        <br />
+        <form>
+          <label for="qr-data"
+            >Enter Characters Below To Generate QR Code. <br />(Max 260
+            Characters)</label
+          >
+          <br /><br /><br />
+          <textarea type="text" id="qr-data" maxlength="260" required>
+          </textarea>
+          <button type="submit" id="generate-button">
+            <i class="fa fa-gear"></i> GENERATE QR CODE
+          </button>
+        </form>
+        <button id="download-button">
+          <i class="fa fa-download"></i> DOWNLOAD
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
